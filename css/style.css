@@ -1,3 +1,7 @@
+body {
+    color: dodgerblue;
+    font-family: sans-serif;
+}
 input[type='text'] {
     margin-left: 1%;
     margin-right: 1%;
@@ -6,8 +10,8 @@ input[type='text'] {
     width: 50%;
 }
 
-.food {
-    border: 1px solid #333;
+.vehicle {
+    border: 1px solid grey;
     margin: 1%;
     padding: 1%;
 }

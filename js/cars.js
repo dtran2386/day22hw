@@ -1,21 +1,21 @@
 module.exports = [{
     id: 0,
-    name: 'Broccoli',
-    type: 'Vegetable',
-    suggestions: ['broccoli casserole', 'broccoli cheddar soup'],
+    name: 'Toyota Camry',
+    type: 'Sedan',
+    suggestions: ['on the road', ' for a leisurely ride'],
 }, {
     id: 1,
-    name: 'Asparagus',
-    type: 'Vegetable',
-    suggestions: ['asparagus casserole', 'asparagus soup'],
+    name: 'Toyota Avalon',
+    type: 'Sedan',
+    suggestions: ['to church', ' around the city'],
 }, {
     id: 2,
-    name: 'Venison',
-    type: 'Meat',
-    suggestions: ['venison burgers', 'venison cheddar soup']
+    name: 'Porsche 911',
+    type: 'Sports Car',
+    suggestions: ['along the coast', ' around to show off your swagger']
 }, {
     id: 3,
-    name: 'Onion',
-    type: 'Vegetable',
-    suggestions: ['onion stew', 'steak and onions'],
+    name: 'Audi R8',
+    type: 'Sports Car',
+    suggestions: ['through downtown slowly', ' to the beach'],
 }];
