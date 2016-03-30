@@ -3,8 +3,6 @@ var _ = require('underscore');
 
 window.addEventListener('load', function () {
     console.log('the page is loaded');
-//    document.getElementById('type-sportsCars').addEventListener('click', send());
-//    document.getElementById('type-sedans').addEventListener('click', send());
     
     var info = _.template(document.getElementById('vehicle-template').textContent);
     for (var i = 0; i < cars.length; i++) {
@@ -19,4 +17,14 @@ window.addEventListener('load', function () {
     parent.appendChild(el);
     console.log(html);
     }// end for loop
-});
+});// end window.addEventListener
+    
+window.onload = function () {
+    var button = document.getElementById('type-sportsCars');
+    button.addEventListener('click', show);
+    var button1 = document.getElementById('type-sedans');
+    button1.addEventListener('click', show);
+}
+function show(event) {
+    document.getElementById('results').classList.toggle('hidden');
+}

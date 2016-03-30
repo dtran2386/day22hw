@@ -1,0 +1,24 @@
+{
+  "name": "day22",
+  "version": "1.0.0",
+  "description": "Travis CI",
+  "main": "app.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtran2386/day22hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtran2386/day22hw/issues"
+  },
+  "homepage": "https://github.com/dtran2386/day22hw#readme"
+}
