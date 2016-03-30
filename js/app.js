@@ -4,6 +4,12 @@ var _ = require('underscore');
 window.addEventListener('load', function () {
     console.log('the page is loaded');
     
+    document.getElementById("search-box").addEventListener("keyup", myFunction);
+    function myFunction() {
+        var x = document.getElementById("search-box");
+        x.value = x.value.toUpperCase();
+}
+    
     var info = _.template(document.getElementById('vehicle-template').textContent);
     for (var i = 0; i < cars.length; i++) {
     var html = info({
@@ -12,19 +18,20 @@ window.addEventListener('load', function () {
         suggestions: cars[i].suggestions,
     });
     var el = document.createElement('div');
-    el.innerHTML = html;
+        el.innerHTML = html;
     var parent = document.getElementById('results');
-    parent.appendChild(el);
+        parent.appendChild(el);
     console.log(html);
     }// end for loop
 });// end window.addEventListener
     
 window.onload = function () {
     var button = document.getElementById('type-sportsCars');
-    button.addEventListener('click', show);
+        button.addEventListener('click', show);
     var button1 = document.getElementById('type-sedans');
-    button1.addEventListener('click', show);
+        button1.addEventListener('click', show);
 }
-function show(event) {
-    document.getElementById('results').classList.toggle('hidden');
+    function show(event) {
+        document.getElementById('results').classList.toggle('hidden');
 }
+
