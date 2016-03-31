@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://underscorejs.org/underscore-min.js"></script> 
+    <script src="js/app.js"></script>
+
+    <script type="text/template" id="vehicle-template">
+        <div class="vehicle">
+            <h2 class="font"><%= name %></h2>
+            <p>
+                <%= type %>
+            </p>
+            <p>Awesome to take:
+                <%= suggestions %>
+            </p>
+        </div>
+    </script>
+</head>
+
+<body>
+    <h1 id="font">Car Search</h1>
+    <input type="text" id="search-box" placeholder="Name of Vehicle">
+    <label for="type-sportsCars" class="font">Sports Cars</label>
+    <input type="radio" id="type-sportsCars" name="subtype">
+    <label for="type-sedans" class="font">Sedans</label>
+    <input type="radio" id="type-sedans" name="subtype">
+    
+    <div id="results"></div>
+    
+</body>
+
+</html>
